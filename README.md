@@ -1,5 +1,6 @@
 #MoviesEngine 
 
 ***
-+ search the links like 
++ set website manually
++ search the links like "thunder://*"
 ***
