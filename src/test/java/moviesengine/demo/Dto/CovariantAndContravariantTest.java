@@ -1,9 +1,6 @@
 package moviesengine.demo.Dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.junit.MockitoJUnitRunner;
@@ -12,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RunWith(MockitoJUnitRunner.class)
-public class MovieInfoTest {
+public class CovariantAndContravariantTest {
 
     @Test
     public void classTest() {

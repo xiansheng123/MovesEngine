@@ -1,4 +1,11 @@
-package moviesengine.demo;
+package moviesengine.demo.Dto;
 
-public class Dto {
+import lombok.Data;
+
+@Data
+public class MovieInfo {
+    private String name;
+    private String link;
+    private String webSite;
 }
+
