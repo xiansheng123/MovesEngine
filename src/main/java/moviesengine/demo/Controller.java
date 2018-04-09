@@ -17,7 +17,9 @@ public class Controller {
 
     @PostMapping(value = "/test")
     public List<String> GetMovies() {
-        String url = "https://www.dy2018.com/i/99050.html";
+        //https://www.dy2018.com/i/99261.html
+        //"https://www.dy2018.com/i/99050.html";
+        String url = "https://www.dy2018.com/i/99261.html";
         List<String> seekUrl = new ArrayList<> ();
         downloadFile.getRespond (url, seekUrl);
         return seekUrl;

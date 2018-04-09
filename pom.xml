@@ -44,7 +44,11 @@
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
 		</dependency>
-		
+		<dependency>
+			<groupId>com.mks.api</groupId>
+			<artifactId>mksapi-jar</artifactId>
+			<version>4.10.9049</version>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
