@@ -1,6 +1,13 @@
 package moviesengine.demo.service;
 
+import ch.qos.logback.core.util.FileUtil;
+import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.FilenameUtils;
 import org.junit.Test;
+
+import java.io.File;
+import java.io.FilenameFilter;
+import java.util.Collection;
 
 import static org.junit.Assert.*;
 
@@ -12,8 +19,22 @@ public class DownloadFileTest {
         int begin = oneLineContent.indexOf ("thunder://");
         String beginStr = oneLineContent.substring (begin);
         int end = beginStr.indexOf ("\"");
-        System.out.println (oneLineContent.substring (begin, begin+end+1));
+        System.out.println (oneLineContent.substring (begin, begin + end + 1));
     }
 
+    @Test
+    public void FileLoading() throws Exception {
+        Collection<File> cc = FileUtils.listFiles (
+                new File ("C:\\Users\\luxuda\\workspace\\demo_web\\src\\main\\java\\com\\example\\demo_web"),
+                new String[]{"java"}, true);
+        cc.forEach (x -> {
+            try {
+                new File ("C:\\Users\\luxuda\\workspace\\gg" + "\\" + x.getName ()).createNewFile ();
+            } catch (Exception ex) {
+                System.out.println (ex.getMessage ());
+            }
+            ;
+        });
+    }
 
 }
